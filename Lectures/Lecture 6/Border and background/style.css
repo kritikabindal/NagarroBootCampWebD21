@@ -1,0 +1,33 @@
+section{
+    width:80vw;
+    border:1px solid #ccc;
+    margin:50px auto;
+    padding: 16px;
+}
+
+section h1{
+    font-size: 2.2rem;
+    text-align: center;
+    border-width: 10px;
+    border-style: dashed;
+    border-color: lightseagreen;
+    padding: 20px 0px;
+    border-radius: 15px 50px 30px;
+    background-color: lightskyblue;
+}
+
+
+p{
+    border-left: 15px solid #0077b6;
+    padding-left: 10px;
+}
+
+article{
+    width: 60vw;
+    height: 60vh;
+    border:1px solid #ccc;
+    margin:50px auto;
+   background-image: url(https://images.unsplash.com/photo-1593642533144-3d62aa4783ec?ixid=MXwxMjA3fDF8MHxzZWFyY2h8MXx8dGVjaG5vbG9neXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60); 
+   background-position: cover;
+    
+}
