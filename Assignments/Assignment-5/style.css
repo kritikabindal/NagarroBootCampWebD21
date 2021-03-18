@@ -104,6 +104,7 @@ margin: 10px 0px;
 
 #foot
 {
+    width: 100%;
     background-color: #263c41;
     height:100%;
 }
@@ -125,24 +126,19 @@ li{
     margin:5px;
 }
 
-.bottom {
-    max-width:100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.bottom .right
-{
-    flex-direction: column;
-}
+
+
 .left
 {
     margin:1rem;
     padding:2rem;
 }
- 
-.right
-{
-    justify-self: center;
-}
+  
+#foot .row .col{
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding :2rem;
+}  
