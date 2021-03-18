@@ -79,3 +79,70 @@ div>h1
     margin-bottom:150px;
     
 }
+
+#skills
+{
+    /* background-color: #f4f0f7; */
+    margin-top:-16px;
+    height:100%;
+    width:100%;
+    margin-bottom: 60px;
+}
+
+#skills .col-md-6 {
+/* padding:5px; */
+margin: 10px 0px;
+}
+
+.font
+{
+    font-size: 18px;
+    color:#767676;
+    text-align: left;
+}
+
+
+#foot
+{
+    background-color: #263c41;
+    height:100%;
+}
+
+footer h6{
+    color:white;
+}
+
+.list
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+    
+}
+li{
+    float:right;
+    margin:5px;
+}
+
+.bottom {
+    max-width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.bottom .right
+{
+    flex-direction: column;
+}
+.left
+{
+    margin:1rem;
+    padding:2rem;
+}
+ 
+.right
+{
+    justify-self: center;
+}
