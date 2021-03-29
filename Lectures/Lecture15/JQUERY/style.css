@@ -1,0 +1,28 @@
+*
+{
+padding:0px;
+margin:0px;
+
+}
+
+/* img
+{
+    height: 50px;
+width: 50px;
+} */
+
+.first
+
+{
+    background-color:lightgreen;
+    border: 2px solid #ccc;
+    font-weight: bold;
+    width: 360px;
+}
+
+.second
+{
+    text-transform: uppercase;
+    opacity: 0.6;
+    font-style:italic ;
+}
