@@ -7,7 +7,8 @@
 
 body{
     font-family: sans-serif;
-    background-image:linear-gradient(to right,gray,white);
+    background-image:linear-gradient(to right,gray,lightgray
+    );
 }
 
 #container
@@ -29,12 +30,14 @@ body{
 
 h1{
     padding:  10px 5px;
+    background-color: #0081a7; 
+    color:white;
 }
 
 span{
     cursor: pointer;
     display: inline-block;
-    margin-right: auto;
+    margin-right: 10px;;
 }
 
 ul{
@@ -52,9 +55,6 @@ input:focus{
     outline:none;
 }
 
-
-
-
 #plus
 {
     float:right;
@@ -67,5 +67,5 @@ li{
     padding:10px 10px;
     margin:10px;
     border-radius: 5px;
-    background-color: yellow;
+    background-color:#e9c46a;;
 }

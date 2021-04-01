@@ -1,32 +1,44 @@
-// const 
+//  const textData=`{
+// "ticker": {
+//     "base": "BTC",
+//     "target": "USD",
+//     "price": "58931.05461665",
+//     "volume": "28576.21543030",
+//     "change": "-102.95949551"
+//     },
+//     "timestamp": 1617282904,
+//     "success": true,
+//     "error": ""
+//     }`
 
-// const data=JSON.parse(textData);
+
+ //parse method takes a json string and return an object
+//  const data=JSON.parse(textData);
 
 // console.log(data);
-// console.log(data.ticket.price);
+//then we use it as js object
+
+//  console.log(data.ticker.price);
 
 
+//--------------------------------------------------
 
-
-//oldest way of sending request
-
-// const req=new X
-
-
+//oldest way of sending request 
+//1) XMLHttpRequest
+//ye ek object return karega
+// const req=new XMLHttpRequest();
 
 // req.onload=function()
 // {
 //     console.log(this.responseText);
-//     console.log()
+//     const data=JSON.parse(this.responseText);
+//     console.log(data.ticker.price);
 // }
-
 // req.onerror= function()
 // {
 //     console.log(err);
 // }
-
-
-// req.open('GET',);
+// req.open('GET','https://api.cryptonator.com/api/ticker/btc-usd');
 // req.send();
 
 
@@ -34,11 +46,12 @@
 
 //----------------------------------
 //New way of sending request
-fetch('')
+//2) using fetch
+
+fetch('https://api.cryptonator.com/api/ticker/btc-usd')
 .then(data=>{
     console.log(data);
-
-
+    //json promise is resolved then the  whole data will return
     return data.json();
 })
 .then(parseData=>{
@@ -49,6 +62,8 @@ fetch('')
     console.log(err);
 })
 
+//-------------------------------------
+//3)third party
 
 
 

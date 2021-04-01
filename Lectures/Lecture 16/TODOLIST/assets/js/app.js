@@ -12,7 +12,7 @@
 $('ul').on('click','li',function()
 {
     // alert("clicked on li")
-    $(this).toggleClass('completed');
+    $(this).toggleClass('Completed');
 })
 
 
@@ -40,7 +40,13 @@ $('input[type="text"]').keypress(function(e)
     // console.log(e);
     if(e.which===13)
     {
-        console.log("YOu HIT the ENTER");
+        // console.log("YOu HIT the ENTER");
+        const todoText=$(this).val();
+        console.log(todoText);
+        const todo=`<li> <span>X</span>${todoText}</li>`
+        $('ul').append(todo);
+        $(this).val(" ");
+
     }
     // console.log("Key Pressed");
 })
@@ -50,5 +56,5 @@ $('input[type="text"]').keypress(function(e)
 
 $('#plus').click(function()
 {
-    $('input[type="text"]').toggleClass
+    $('input[type="text"]').fadeToggle(500);
 })
