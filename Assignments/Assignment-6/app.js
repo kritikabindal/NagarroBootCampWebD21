@@ -28,7 +28,7 @@ class item {
         editButton.classList.add('editButton');
 
         let removeButton=document.createElement('button');
-        editButton.innerHTML="REMOVE";
+        removeButton.innerHTML="REMOVE";
         removeButton.classList.add('removeButton');
 
         container.appendChild(itemBox);
@@ -36,6 +36,7 @@ class item {
         itemBox.appendChild(input);
         itemBox.appendChild(editButton);
         itemBox.appendChild(removeButton);
+
 
 
         editButton.addEventListener('click',()=> this.edit(input));
@@ -47,6 +48,7 @@ class item {
     edit(input)
     {
         input.disabled=!input.disabled;
+        input.classList.toggle('toggle')
     }
 
     remove(item)
@@ -57,10 +59,10 @@ class item {
 
 function check()
 {
-    if(input.value!="")
+    if(inputValue!="")
     {
-        new item(input.value);
-        input.value="";
+        new item(inputValue.value);
+        inputValue.value="";
     }
 }
 

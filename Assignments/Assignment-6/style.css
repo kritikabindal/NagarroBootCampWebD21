@@ -115,3 +115,8 @@ border:none;
 cursor: pointer;
 
 }
+
+.toggle{
+    background-color: white;
+    color: black;
+}
