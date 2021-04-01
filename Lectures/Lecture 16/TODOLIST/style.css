@@ -1,0 +1,71 @@
+*{
+    padding:0;
+    margin:0;
+
+}
+
+
+body{
+    font-family: sans-serif;
+    background-image:linear-gradient(to right,gray,white);
+}
+
+#container
+{
+    border:2px solid #ccc;
+    width: 360px;
+    margin:50px auto;
+}
+
+
+.Completed
+{
+    color:gray;
+    text-decoration: line-through;
+    
+
+}
+
+
+h1{
+    padding:  10px 5px;
+}
+
+span{
+    cursor: pointer;
+    display: inline-block;
+    margin-right: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+input{
+    width:100%;
+    box-sizing:border-box;
+    font-size: 18px;
+    padding:  10px 5px;
+}
+
+input:focus{
+    outline:none;
+}
+
+
+
+
+#plus
+{
+    float:right;
+    margin-right:30px;
+}
+
+li{
+    /* border: 1px solid green; */
+    font-size: 18px;
+    padding:10px 10px;
+    margin:10px;
+    border-radius: 5px;
+    background-color: yellow;
+}
