@@ -14,7 +14,7 @@ const {square,add,PI}=require('./math');
 //--------------------------------------------
 
 //afterdesturing the export file,then print
-console.log( square(6));
+console.log( square(6));;;
 console.log(add(3,4));
 console.log(PI);
 
