@@ -24,20 +24,20 @@
 
                 <div class="row p-4">
                     <div class=" col col-md-12 col-sm-12 p-3">
-                        <input class="text shadow-lg" type="text" placeholder=" Enter the country/city" id="city">
+                        <input class="text shadow-lg" type="text" placeholder=" Enter the country/city" id="inpVal">
                         <span>
-                            <a id="search"> <i class="fa fa-search fa-2x" aria-hidden="true"></i>
-                            </a>
+                            <button id="search"> <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+                            </button>
                         </span>
                     </div>
 
                     <div class=" inner_content row justify-content-center text-center">
                         <div class="col col-md-12 col-sm-12 p-3">
-                            <h3 id="countryName">Michigan</h3>
-                            <h6 id="day">Wednesday 5 april 2021</h6>
+                            <h3 id="country">Kindly search country</h3>
+                            <h6 id="day"> Monday,5/april/2021</h6>
                             <h2 id="temp"> 1<span> &#8451;</span></h2>
                             <h4 id="visibility"> clouds</h3>
-                                <h4><span id="min"> 1 &#8451;</span> <span id="max">/1 &#8451;</span></h4>
+                                <h4><span id="min"> 1 &#8451;</span> / <span id="max">1 &#8451;</span></h4>
                         </div>
                     </div>
                 </div>
@@ -47,6 +47,20 @@
     </div>
 
     <script src="app.js"></script>
+    <script>
+        let date = new Date();
+        var weekday = new Array(7);
+        weekday[0] = "Sunday";
+        weekday[1] = "Monday";
+        weekday[2] = "Tuesday";
+        weekday[3] = "Wednesday";
+        weekday[4] = "Thursday";
+        weekday[5] = "Friday";
+        weekday[6] = "Saturday";
+        var currentDay = weekday[date.getDay()];
+        document.getElementById("day").innerHTML = currentDay + ", " + date.getDate() + " / " + date.getMonth() + " / " + date.getFullYear();
+
+    </script>
 </body>
 
 </html>
