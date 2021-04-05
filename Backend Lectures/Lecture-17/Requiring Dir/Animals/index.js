@@ -8,5 +8,5 @@ const obj={
     cat:cat,
     dog:dog
 }
-module.exports=obj;
+// module.exports=obj;
 
