@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <h1> this is a home page <%=4+6+6%>
+    </h1>
+
+
+    <h1> this is a home page <%= 'Hello World' .toUpperCase() %>
+    </h1>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eius quam animi minima et corrupti magnam
+        accusamus voluptatum laudantium, ex vel eos tempore placeat alias cumque mollitia. Alias, sunt aliquid?</p>
+
+
+    <!---Card-->
+    <div class="card" style="width: 18rem;">
+        <img src="<%=product.img%>" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">
+                <%=product.name%>
+            </h5>
+            <p class="card-text">
+                <%=product.description%>
+            </p>
+            <h5 class="card-title">
+                <%=product.price%>
+            </h5>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
