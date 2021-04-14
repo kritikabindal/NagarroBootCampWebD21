@@ -12,7 +12,7 @@ const app=express()
 // })
 //----------------------------------
 //this is for every req
-// app.use((req,res)=>
+// app.use((req,res,next)=>
 // {
 //     // console.log(req);
 //     // console.log(res);
@@ -21,6 +21,7 @@ const app=express()
 
 //     //send html
 //     res.send('<h1> this is the http response </h1>')
+// next();
 // })
 //------------------------------------
 

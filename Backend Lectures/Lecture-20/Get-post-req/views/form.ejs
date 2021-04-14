@@ -6,29 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        form {
+            height: 30vh;
+            width: 50%;
+            justify-content: center;
+            align-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
 </head>
 
 <body>
 
 
 
-    <h1>GET & POST REq</h1>
+    <h1>Get & Post Req</h1>
 
-    <h2>get</h2>
+    <h3>Get</h3>
 
     <form action="/user" method="GET">
 
-        <input type="text" name"username">
-        <input type="number" name="age" id="">
+        <input type="text" name="username" placeholder=" Enter Username">
+        <br> <br>
+        <input type="number" name="age" id="" placeholder=" Enter Age">
+        <br>
+        <br>
 
         <button> Submit</button>
 
     </form>
 
-    <form action="/user" method="POST">
 
-        <input type="text" name"username">
-        <input type="number" name="age" id="">
+    <br>
+    <br>
+    <h3>Post</h3>
+    <form action="/user" method="post">
+
+        <input type="text" name="username" placeholder="Username">
+        <br>
+        <br>
+        <input type="number" name="age" id="" placeholder="Age">
+        <br> <br>
 
         <button> Submit</button>
 

@@ -9,7 +9,7 @@ app.set('views',path.join(__dirname,'/views'));
 
 const todos =["Go to Gym","Learn Web","Buy Groceries","Go for a walk"];
 
-const product={
+const product=[{
 img: 'https://images.unsplash.com/photo-1617909660121-ee367f2874ef?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1OXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
 name:'kuch bhi',
 
@@ -17,7 +17,23 @@ price: '200',
 
 description: 'gjhgfetrfdrtryv'
 
-}
+},
+{
+    img: 'https://images.unsplash.com/photo-1617909660121-ee367f2874ef?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1OXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    name:'kuch bhi',
+    
+    price: '100',
+    
+    description: 'gjhgfetrfdrtryv' 
+},
+{
+img: 'https://images.unsplash.com/photo-1617909660121-ee367f2874ef?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1OXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+name:'kuch bhi',
+
+price: '200',
+
+description: 'gjhgfetrfdrtryv'
+}]
 
 app.get('/random',(req,res)=>
 {
