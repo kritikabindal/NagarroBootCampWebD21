@@ -1,0 +1,21 @@
+[
+    {
+        "id":1,
+        "name":"Kartik",
+        "text":"I want coffee",
+        "comments":[
+            "worst Product",
+            "Nice"
+        ]
+    },
+
+    {
+      "id":2,
+        "name":"Lalit",
+        "text":"I want chai",
+        "comments":[
+            "tasty",
+            "active" 
+        ] 
+    }
+]
