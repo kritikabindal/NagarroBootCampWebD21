@@ -80,8 +80,9 @@ app.patch('/blogs/:id',(req,res)=>{
     const updatedtitle = req.body.Title;
     const updatedAuthor = req.body.Author;
     foundBlog.Description = updatedBody;
-    foundBlog.Title = updatedtitle;
+    foundBlog.Title = updatedtitle; 
     foundBlog.Author= updatedAuthor;
+    console.log(foundBlog)
     res.redirect('/blogs');
 })
 

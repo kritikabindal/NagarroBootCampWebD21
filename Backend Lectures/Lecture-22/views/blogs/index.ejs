@@ -19,28 +19,30 @@
         <div class="conatiner">
             <div class="row">
                 <div class="col col-md-12 col-sm-12">
-                    <div class="card">
-                        <img src="<%=b.Image%>" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <%=b.Title%>
-                            </h5>
-                            <h5 class="card-title">
-                                <%=b.Author%>
-                            </h5>
-                            <p class="card-text">
-                                <%=b.Description%>
-                            </p>
-                            <div class=text-center>
-                                <a href="/blogs/<%=b.id%>" class="btn btn-primary">Show</a>
-                                <a href="/blogs/<%=b.id%>/edit" class="btn btn-primary">Edit</a>
-                                <!-- <a href="/" class="btn btn-primary">Delete</a> -->
+                    <div class="container">
+                        <div class="card">
+                            <img src="<%=b.Image%>" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <%=b.Title%>
+                                </h5>
+                                <h5 class="card-title">
+                                    <%=b.Author%>
+                                </h5>
+                                <p class="card-text">
+                                    <%=b.Description%>
+                                </p>
+                                <div class=text-center>
+                                    <a href="/blogs/<%=b.id%>" class="btn btn-primary">Show</a>
+                                    <a href="/blogs/<%=b.id%>/edit" class="btn btn-primary">Edit</a>
+                                    <!-- <a href="/" class="btn btn-primary">Delete</a> -->
 
-                                <form method="POST" action="/blogs/<%= b.id %>?_method=DELETE ">
-                                    <button type="submit">Delete</button>
-                                </form>
+                                    <form method="POST" action="/blogs/<%= b.id %>?_method=DELETE ">
+                                        <button type="submit">Delete</button>
+                                    </form>
 
 
+                                </div>
                             </div>
                         </div>
                     </div>
