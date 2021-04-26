@@ -1,4 +1,5 @@
 const mongoose=require ('mongoose');
+const Product=require('./models/product');
 
 
 //schema
@@ -25,45 +26,48 @@ const Product =mongoose.model('Product',productSchema);
 
 const arr=[
     {
-        name="Iphone12",
+        name:"Phone",
         price:100000,
         desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
     },
-    {  name="Macbook Air",
-          price:14500,
+    {  name:"Macbook Air",
+        price:14500,
         desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.  only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
 
     },
     {
-        name="Drone",
-          price:11000,
+        name:"Drone",
+        price:11000,
         desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever ed not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
     },
     {
-        name="T-shirt",
-          price:1400,
+        name:"T-shirt",
+        price:1400,
         desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrd not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
     },
     {
-        name="Watchs",
-          price:8000,
+        name:"Watch",
+        price:8000,
         desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrd not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
     }
 ];
 
-
-
-Product.insertMany(arr)
-.then(()=>
+function seed()
 {
-console.log("DB Seeded");
-})
-.catch(err=>
+    Product.insertMany(arr)
+    .then(()=>
     {
-        console.log("Error");
-        // console.log();
+    console.log("DB Seeded");
     })
+    .catch(err =>
+        {
+            console.log(err);
+            // console.log();
+        })
+    
+}
 
 
 
+//we are just exporting this function
     module.exports=seed;
