@@ -41,7 +41,6 @@ app.use(methodOverride("_method"));
 // {
 //     res.send("Landing page");
 // }
-app.use(productRoutes);
 
 const sessionConfig = {
   secret: "weneedsomebettersecret",
@@ -56,6 +55,8 @@ app.use((req, res, next) => {
   res.locals.error = req.flash("error");
   next();
 });
+app.use(productRoutes);
+
 app.listen(8001, () => {
   console.log("server started at port 8001");
 });

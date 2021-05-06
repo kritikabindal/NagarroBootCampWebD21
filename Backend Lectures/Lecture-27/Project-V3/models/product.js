@@ -17,10 +17,11 @@ const productSchema = new mongoose.Schema({
   desc: {
     type: String,
   },
-  reviews:[{
-    type:mongoose.Schema.Types.ObjectId,
-    ref:'Review'
-  }
+  reviews: [
+    {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: Review
+    }
 ]
 });
 

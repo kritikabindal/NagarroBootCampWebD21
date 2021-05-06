@@ -79,10 +79,25 @@ router.delete("/products/:id", async (req, res) => {
 router.post("/products/:id/review", async (req, res) => {
   // res.send("you hit the comment route ");
   // console.log(req.body);
-  const product = await Product.findById(req.params.id);
-  const review = new Review(req.body);
+  // const product = await Product.findById(req.params.id);
+  // const review = new Review(req.body);
 
-  console.log(review);
+  // console.log(review.rating);
+
+  // product.reviews.push(review);
+
+  // await review.save();
+  // await product.save();
+
+  //console.log(req.params)
+
+  const product = await Product.findById(req.params.id);
+
+  //console.log(product)
+  console.log(req.body);
+  const review = new Review(req.body);
+  // console.log(review.rating)
+  // console.log(review.comment)
 
   product.reviews.push(review);
 

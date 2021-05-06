@@ -1,0 +1,93 @@
+<%- include("../partials/header") %>
+    <%- include("../partials/navbar") %>
+
+
+        <div class="container mt-3" style="margin-top:3rem; width:80vw">
+
+            <form class="validated-form" action="/blogs" method="POST" style="max-width:70%; margin: 10px auto"
+                novalidate>
+
+                <!----to enter the blog name-->
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Blog Name" name="blog[name]"
+                        required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+
+                </div>
+
+                <!---to enter the image -->
+                <div class="mb-3">
+                    <label for="img" class="form-label">Image URL</label>
+                    <input type="text" class="form-control" id="img" placeholder="Image URL" name="blog[img]" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <!---- to enter the description of cafe-->
+                <div class="mb-3">
+                    <label for="desc" class="form-label">Description</label>
+                    <textarea class="form-control" name="blog[desc]" required id="desc" cols="30" rows="5"></textarea>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+
+                </div>
+
+
+                <!---- To enter the location of cafe-->
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" class="form-control" id="location" placeholder="Enter Location"
+                        name="blog[location]" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+
+                </div>
+
+
+                <!---- to enter the highlights of the cafe-->
+                <div class="mb-3">
+                    <label for="highlights" class="form-label">Highlights</label>
+                    <input type="text" class="form-control" id="highlights" placeholder="Enter Highlights"
+                        name="blog[highlights]" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+
+                </div>
+
+
+                <!--- to enter the cost for two-->
+                <div class="mb-3">
+                    <label for="cost" class="form-label">Cost For Two</label>
+                    <input type="number" class="form-control" id="cost" placeholder="cost" name="blog[price]" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+
+                </div>
+
+
+                <!---to enter the timing of cafe-->
+
+                <!--- to enter the cost for two-->
+                <div class="mb-3">
+                    <label for="time" class="form-label">Timing</label>
+                    <input type="text" class="form-control" id="cost" placeholder="time" name="blog[time]" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+
+                </div>
+
+
+
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </div>
+
+        <%- include("../partials/footer") %>
