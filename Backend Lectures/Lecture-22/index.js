@@ -40,7 +40,7 @@ app.get("/blogs", (req, res) => {
   res.render("blogs/index", { blogs });
 });
 
-//getting a blog for adding  new comment
+//getting a blog for adding  new blog 
 app.get("/blogs/new", (req, res) => {
   res.render("blogs/new");
 });
