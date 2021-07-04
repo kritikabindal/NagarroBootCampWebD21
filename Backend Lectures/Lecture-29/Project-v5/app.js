@@ -20,8 +20,8 @@ mongoose.connect('mongodb://localhost:27017/shopApp',
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        useFindAndModify:false,
-        useCreateIndex:true
+        useFindAndModify: false,
+        useCreateIndex: true
     })
     .then(() => {
         console.log("DB Connected");
@@ -69,7 +69,7 @@ app.use((req, res, next) => {
 
 
 app.get('/', (req, res) => {
-    
+
     res.send("LANDING PAGE");
 })
 
